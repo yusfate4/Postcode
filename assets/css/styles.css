@@ -321,14 +321,24 @@ i.fa-person:hover {
 } */
 
 /* The Container */
+section.ads {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 1rem auto;
+  /* border: 3px solid red; */
+}
 .box-grid {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 0.3rem;
-  justify-items: center;
+  /* justify-items: center; */
   /* padding: 0; */
   padding: 0.3% 17%;
+  width: 100%;
 }
 
 /* Styles for the caption overlays */
@@ -338,15 +348,208 @@ i.fa-person:hover {
   flex-flow: row nowrap;
   align-items: flex-start;
   /* justify-content: center; */
-
-  font-size: 1.2rem;
+  /* font-size: 1rem; */
   color: #d9d9d9;
+  max-height: 230px;
 }
-.box-flex img {
+
+.box-grid .box-flex.item-1 {
+  /* border: 3px solid red; */
+  background-image: url(../images/item-1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box-grid .box-flex.item-1 span {
+  background-image: url(../images/norway.png);
+  width: 25px;
+  height: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+.box-grid .box-flex.item-2 {
+  /* border: 3px solid red; */
+  background-image: url(../images/item-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box-grid .box-flex.item-2 span {
+  background-image: url(../images/france.png);
+  width: 25px;
+  height: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+.box-grid .box-flex.item-3 {
+  /* border: 3px solid red; */
+  background-image: url(../images/item-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box-grid .box-flex.item-3 span {
+  background-image: url(../images/united-kingdom.png);
+  width: 25px;
+  height: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+.box-flex.item-4 {
+  display: flex;
+  flex-direction: column;
+  background-color: #edf1f6;
+
+  /* border: 3px solid red; */
+}
+.box-flex.item-4 div {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+  color: #5579ac;
+  background-color: #edf1f6;
+  font-size: 0.9rem;
+}
+.box-flex.item-4 div small {
+  color: #838383;
+}
+
+.box-flex.item-4 div:hover {
+  background-color: #fff;
+}
+.city-list-1 span {
+  background-image: url(../images/norway.png);
+  width: 15px;
+  height: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+.city-list-2 span {
+  background-image: url(../images/france.png);
+  width: 15px;
+  height: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+.city-list-3 span {
+  background-image: url(../images/united-kingdom.png);
+  width: 15px;
+  height: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+.city-list-4 span {
+  background-image: url(../images/norway.png);
+  width: 15px;
+  height: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+.city-list-5 span {
+  background-image: url(../images/italy.png);
+  width: 15px;
+  height: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+.city-list-6 span {
+  background-image: url(../images/greece.png);
+  width: 15px;
+  height: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+.city-list-7 span {
+  background-image: url(../images/italy.png);
+  width: 15px;
+  height: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+.city-list-8 span {
+  background-image: url(../images/france.png);
+  width: 15px;
+  height: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+.city {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  /* margin-left: 30px; */
+}
+.city .city-grid {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 12px;
+  color: #838383;
+}
+
+.city .city-grid.one {
+  margin-right: 15px;
+}
+
+.city .city-grid.three {
+  margin-left: 15px;
+}
+.city .city-grid button {
+  /* width: 100%; */
+  background-color: #fff;
+  padding: 3px;
+  border: 1px solid #838383;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.city .city-grid button a {
+  display: flex;
+  background-color: #0896ff;
+  padding: 5px 3rem;
+}
+
+.city .city-grid button a:hover {
+  background-color: #003277;
+}
+.city .city-grid button a .search-icon {
+  margin-right: 10px;
+  width: 0.875em;
+}
+
+/* .box-flex img {
   width: 100%;
   min-height: 250px;
   border-radius: 5px;
-}
+} */
 /* Box: Center Center */
 /* .box-flex-center {
   align-items: center;
@@ -378,13 +581,12 @@ i.fa-person:hover {
 
 .box-caption {
   position: absolute;
-  /* border: 3px solid red; */
-  max-width: 150px;
+  max-width: 100%;
   margin-left: 5px;
   margin-top: 5px;
-  padding: 0.5rem 3rem 0.5rem 0.3rem;
+  padding: 0.5rem 1rem 0.5rem 0.3rem;
   word-break: break-word;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
   text-shadow: 1px 1px 1px #000;
@@ -396,53 +598,52 @@ i.fa-person:hover {
 
 /* .box-caption .city-list {
 } */
-.box-flex {
+/* .box-flex {
   display: flex;
   flex-direction: column;
-}
+} */
 .box-caption-para {
   font-size: 0.7rem;
   color: #a9a9a9;
   max-width: 100%;
   margin-left: 150px;
 }
-.box-flex .city {
+/* .box-flex .city {
   background-color: #edf1f6;
   font-size: 1rem;
   margin-right: 20px;
   border-radius: 5px;
   cursor: pointer;
-}
+} */
 
-.box-flex .city .city-list {
-  /* border: 3px solid red; */
+/* .box-flex .city .city-list {
   padding: 5px 10px 5px 20px;
-}
+} */
 
-.box-flex .city .city-list span {
+/* .box-flex .city .city-list span {
   margin-left: 20px;
   float: right;
   clear: left;
-}
+} */
 
-.box-flex .city a {
+/* .box-flex .city a {
   text-decoration: none;
   color: #2d5596;
   font-weight: 400;
   line-height: 1.9;
   list-style-type: none;
-}
+} */
 
-.box-flex .city-list li:hover {
+/* .box-flex .city-list li:hover {
   background-color: #fff;
-}
-.box-flex .city ul {
+} */
+/* .box-flex .city ul {
   list-style-type: none;
 }
 
 .city-list span {
   color: #adaeaf;
-}
+} */
 
 /* .box-caption img {
   width: 50%;
